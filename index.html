@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">>
+  <title>Торты на заказ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a class="page-header__logo" href="#">Cakes</a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Наши торты</li>
+        <li class="main-nav__item">Индивидуальный заказ</li>
+        <li class="main-nav__item">Отзывы</li>
+        <li class="main-nav__item">О нас</li>
+        <li class="main-nav__item">Как заказать</li>
+        <li class="main-nav__item">Контакты</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+
+    <section class="intro">
+      <h1 class="intro__title">Торты на заказ</h1>
+      <span class="intro__remark">Ручная работа</span>
+
+      <p class="intro__description-1">Натуральные ингридиенты</p>
+      <p class="intro__description-2">Доставка бесплатно при заказе от 2000 рублей</p>
+
+      <button>Выбрать торт</button>
+    </section>
+
+    <section class="catalog">
+      <h2 class="catalog__title">Наши торты</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <h3 class="catalog__cake-type">Классические</h3>
+          <span class="catalog__cake-kinds">24 видов</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__cake-type">Муссовые</h3>
+          <span class="catalog__cake-kinds">12 видов</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__cake-type">Свадебные</h3>
+          <span class="catalog__cake-kinds">20 видов</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__cake-type">Мужчинам</h3>
+          <span class="catalog__cake-kinds">12 видов</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__cake-type">Женщинам</h3>
+          <span class="catalog__cake-kinds">16 видов</span>
+        </li>
+        <li class="catalog__item">
+          <h3 class="catalog__cake-type">Детские</h3>
+          <span class="catalog__cake-kinds">18 видов</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="custom-order">
+      <h2 class="custom-order__title">Индивидуальный заказ</h2>
+      <span class="custom-order__remark">Соберите торт в 3 шага</span>
+
+      <ul class="custom-order__list">
+        <li class="custom-order__item">
+          <h3 class="custom-order__item-title">01 Выберите начинку</h3>
+          <div class="custom-order__img-slider"></div>
+          <h4>Шоколадный ганаш</h4>
+          <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый
+            шоколадный из всех возможных десертов!</p>
+          <span>1000 руб/кг</span>
+          <button>Выбрать</button>
+        </li>
+        <li class="custom-order__item">
+          <h3 class="custom-order__item-title">02 Размер</h3>
+          <div class="custom-order__img-slider"></div>
+          <span>17-18см
+            <br>
+            (1 кг – 6 персон)
+          </span>
+          <button>Выбрать</button>
+        </li>
+        <li class="custom-order__item">
+          <h3 class="custom-order__item-title">03 Оформление</h3>
+          <div class="custom-order__img-slider"></div>
+          <p>Маршмэллоу</p>
+          <span>600 руб/кг</span>
+          <button>Выбрать</button>
+        </li>
+      </ul>
+      <form class="choice-form" method="get" action="https://echo.htmlacademy.ru">
+        <h3 class="choice-form__title">Ваш выбор</h3>
+
+        <p class="choice-form__option-name">Начинка</p>
+        <select name="filling">
+          <option value="Шоколадный ганаш">Шоколадный ганаш</option>
+        </select>
+
+        <p class="choice-form__option-name">Размер</p>
+        <select name="size">
+          <option value="1 кг">1 кг</option>
+          <option value="2 кг">2 кг</option>
+          <option value="5 кг">5 кг</option>
+          <option value="8 кг">8 кг</option>
+        </select>
+
+        <p class="choice-form__option-name">Оформление</p>
+        <select name="decor">
+          <option value="Маршмэллоу">Маршмэллоу</option>
+        </select>
+
+        <button class="choice-form__button" type="submit">Заказать торт</button>
+      </form>
+    </section>
+
+    <article class="reviews">
+      <h2 class="reviews__title">Отзывы</h2>
+      <blockquote>
+        <img class="reviews__author-img" src="" alt="">
+        <cite class="reviews__author-name"><b>Мария</b>юрист, 33 года</cite>
+        <p class="reviews__text">Заказывала торт брауни на юбилей мужа.
+          Гости были в восторге! Отдельное спасибо за своевременную доставку!
+          Теперь будем заказывать торты только у вас для наших семейных праздников:)
+          <a class="reviews__more" href="#">Развернуть</a>
+        </p>
+      </blockquote>
+    </article>
+
+    <section class="about-us">
+      <h2 class="about-us__title">О нас</h2>
+
+      <picture>
+        <img src="" alt="Кондитер">
+      </picture>
+
+      <div class="about-us__social social">
+        <ul class="social__list">
+
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="">
+              Мы в инстаграме
+              <svg>
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--vkonakte" href="">
+              Мы в контакте
+              <svg>
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="">
+              Мы в твиттере
+              <svg>
+                <use xlink:href="#"></use>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <p class="about-us__story-title">О кондитере</p>
+      <p class="about-us__story-pre">Кондитер – как призвание</p>
+      <p class="about-us__story-text">Павел — профессиональный повар в различных гастрономических областях,
+        но однажды его сердце покорило кондитерское искусство.</p>
+      <p class="about-us__story-text">С ранних лет он увлекался утонченным мастерством
+        и обратился к своим талантам как кондитер.</p>
+      <p class="about-us__story-pre">Принцип – натуральные ингредиенты</p>
+      <p class="about-us__story-text">Сегодня Павел радует изделиями не только близких,
+        но и тех, кто предпочитает качественную продукцию для торжества,
+        а главным принципом является выбор натуральных ингредиентов.</p>
+
+      <blockquote>
+        <p>Я за простые рецепты. В Италии это называют cucina povera:
+          когда обычные ингредиенты превращаются в божественное блюдо.</p>
+        <img src="" alt="Роспись">
+      </blockquote>
+
+    </section>
+
+    <section class="advantages">
+
+      <h2 class="advantages__title">Наши преимущества</h2>
+      <span class="advantages__intro">Почему нас выбирают?</span>
+
+      <div class="advantages__wrapper">
+
+        <h3 class="advantages__extra-title">Без искусственных добавок</h3>
+        <p class="advantages__text">Работаем с натуральными ингредиентами и свежими продуктами</p>
+
+        <h3 class="advantages__extra-title">Свежий торт в день торжества</h3>
+        <p class="advantages__text">Торты изготавливаются в течение суток до отправки</p>
+
+      </div>
+
+      <div class="advantages-care">
+
+        <h3 class="advantages-care-title">Забота о клиентах</h3>
+        <span class="advantages__intro">Для нас важно</span>
+        <p class="advantages__text">Нам важно чтобы каждый торт был безупречным, как внутри,
+          так и снаружи, чтобы он был создан исключительно
+          для вас и для вашего события.</p>
+
+      </div>
+
+    </section>
+
+    <section class="delivery">
+      <h2 class="delivery__text">Как заказать</h2>
+
+      <ol>
+        <li>
+          <h3 class="delivery__extra-title">Срок заказа</h3>
+          <p class="delivery__text">Размещать заказы желательно за 2-3 дня. На выходные заказы лучше размещать минимум
+            за неделю.</p>
+        </li>
+
+        <li>
+          <h3 class="delivery__extra-title">Доставка по городу</h3>
+          <p class="delivery__text">Доставка в пределах города 200 рубей , при заказе на сумму более 2000 доставка
+            бесплатно.</p>
+        </li>
+
+        <li>
+          <h3 class="delivery__extra-title">Доставка по городам</h3>
+          <p class="delivery__text">Доставка за пределами города рассчитывается индивидуально.</p>
+        </li>
+      </ol>
+    </section>
+
+    <article class="contacts">
+
+      <h2 class="contacts__title">Контакты</h2>
+      <span class="contacts__intro">Остались вопросы?</span>
+
+      <form class="contacts__form" method="get" action="https://echo.htmlacademy.ru">
+
+        <p class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+        <input type="text" name="username" placeholder="Ваше имя">
+        <input type="text" name="email" placeholder="Email адрес">
+        <textarea name="question" rows="3" placeholder="Ваш вопрос"></textarea>
+
+        <button class="contacts__button" type="submit">Отправить</button>
+      </form>
+
+      <p class="contacts__text">
+        Или позвоните по телефону:<br>
+        +7 906 899 92 96
+      </p>
+      <p class="contacts__text">Наша почта: example@mail.ru</p>
+      <p class="contacts__text">Мы в соцсетях:</p>
+      <a class="social__link social__link--instagram" href="">
+        Мы в инстаграме
+        <svg>
+          <use xlink:href="#"></use>
+        </svg>
+      </a>
+      <a class="social__link social__link--vkonakte" href="">
+        Мы в контакте
+        <svg>
+          <use xlink:href="#"></use>
+        </svg>
+      </a>
+
+    </article>
+
+  </main>
+
+  <footer class="main-footer">
+
+    <a class="page-header__logo" href="#">Cakes</a>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">Наши торты</li>
+        <li class="main-nav__item">Индивидуальный заказ</li>
+        <li class="main-nav__item">Отзывы</li>
+        <li class="main-nav__item">О нас</li>
+        <li class="main-nav__item">Как заказать</li>
+        <li class="main-nav__item">Контакты</li>
+        <li class="main-nav__item">+7 906 899 92 96</li>
+      </ul>
+    </nav>
+    
+    <a class="social__link social__link--instagram" href="">
+      Мы в инстаграме
+      <svg>
+        <use xlink:href="#"></use>
+      </svg>
+    </a>
+    <a class="social__link social__link--vkonakte" href="">
+      Мы в контакте
+      <svg>
+        <use xlink:href="#"></use>
+      </svg>
+    </a>
+
+    <span class="main-footer__copyright">© 2018 Cakes</span>
+
+  </footer>
+
+</body>
+
+</html>

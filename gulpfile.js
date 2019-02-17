@@ -73,12 +73,12 @@ gulp.task("build", function (done) { // Создание билда
 });
 
 gulp.task("sprite", function () { // Создание svg спрайта
-	return gulp.src("img/icon-*.svg")
+	return gulp.src("img/**/icon-*.svg")
 		.pipe(svgstore({
 			inlineSvg: true
 		}))
 		.pipe(rename("sprite.svg"))
-		.pipe(gulp.dest("build/img"));
+		.pipe(gulp.dest("build/img/"));
 });
 
 gulp.task("images", function () { // Сжатие изображений
@@ -89,8 +89,7 @@ gulp.task("images", function () { // Сжатие изображений
 			}),
 			imagemin.jpegtran({
 				progressive: true
-			}),
-			imagemin.svgo()
+			})
 		]))
 		.pipe(gulp.dest("build/img"));
 });

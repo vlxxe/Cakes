@@ -2,25 +2,47 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">>
   <title>Торты на заказ</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <header class="page-header">
+
     <a class="page-header__logo" href="#">Cakes</a>
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">Наши торты</li>
-        <li class="main-nav__item">Индивидуальный заказ</li>
-        <li class="main-nav__item">Отзывы</li>
-        <li class="main-nav__item">О нас</li>
-        <li class="main-nav__item">Как заказать</li>
-        <li class="main-nav__item">Контакты</li>
-      </ul>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#">Наши торты</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Индивидуальный заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Как заказать</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -30,8 +52,18 @@
       <h1 class="intro__title">Торты на заказ</h1>
       <span class="intro__remark">Ручная работа</span>
 
-      <p class="intro__description-1">Натуральные ингридиенты</p>
-      <p class="intro__description-2">Доставка бесплатно при заказе от 2000 рублей</p>
+      <p class="intro__description-1">
+        <svg class="icon-intro__description-1" width="33" height="33">
+          <use xlink:href="#icon-leaflet"></use>
+        </svg>
+        Натуральные ингридиенты
+      </p>
+      <p class="intro__description-2">
+        <svg class="icon-intro__description-2" width="33" height="32">
+          <use xlink:href="#icon-box"></use>
+        </svg>
+        Доставка бесплатно при заказе от 2000 рублей
+      </p>
 
       <button>Выбрать торт</button>
     </section>
@@ -73,6 +105,9 @@
       <ul class="custom-order__list">
         <li class="custom-order__item">
           <h3 class="custom-order__item-title">01 Выберите начинку</h3>
+          <picture class="">
+
+          </picture>
           <div class="custom-order__img-slider"></div>
           <h4>Шоколадный ганаш</h4>
           <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый
@@ -82,6 +117,9 @@
         </li>
         <li class="custom-order__item">
           <h3 class="custom-order__item-title">02 Размер</h3>
+          <svg class="icon-circle-small" width="109" height="109">
+            <use xlink:href="#icon-circle-small"></use>
+          </svg>
           <div class="custom-order__img-slider"></div>
           <span>17-18см
             <br>
@@ -295,7 +333,7 @@
         <li class="main-nav__item">+7 906 899 92 96</li>
       </ul>
     </nav>
-    
+
     <a class="social__link social__link--instagram" href="">
       Мы в инстаграме
       <svg>
@@ -312,7 +350,7 @@
     <span class="main-footer__copyright">© 2018 Cakes</span>
 
   </footer>
-
+  <script src="js/common.min.js"></script>
 </body>
 
 </html>

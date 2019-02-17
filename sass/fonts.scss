@@ -1,0 +1,44 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Circe";
+
+  src: url("../fonts/Circe-Regular.woff") format("woff"),
+  url("../fonts/Circe-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Circe";
+
+  src: url("../fonts/Circe-Bold.woff") format("woff"),
+  url("../fonts/Circe-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "playfair";
+
+  src: url("../fonts/playfairdisplay-bold.woff2") format("woff2"),
+  url("../fonts/playfairdisplay-boldt.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "playfair";
+
+  src: url("../fonts/playfairdisplay-bolditalic.woff2") format("woff2"),
+  url("../fonts/playfairdisplay-bolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "introScript";
+
+  src: url("../fonts/introscriptr-h2base.woff2") format("woff2"),
+  url("../fonts/introscriptr-h2base.woff") format("woff");
+}

@@ -20,6 +20,7 @@ $pink: #f50049;
 
 @media (min-width: $desktop-width) {
   .container {
+    margin: 0;
     padding: 0 73px;
     width: 1220px;
   }

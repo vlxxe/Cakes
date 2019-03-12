@@ -8,20 +8,19 @@ $pink: #f50049;
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 280px;
+  width: 320px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 0 20px;
-    width: 728px;
+    padding: 0 47px;
+    width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    margin: 0;
     padding: 0 73px;
-    width: 1220px;
+    width: 1366px;
   }
 }

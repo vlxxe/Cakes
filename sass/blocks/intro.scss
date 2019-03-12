@@ -1,5 +1,6 @@
 .intro {
   padding-top: 132px;
+  min-height: 464px;
 
   background-color: $light-pink;
   background-image: url(../../img/intro/intro-bg-mobile.png);
@@ -37,8 +38,8 @@
 
 .intro__description-1,
 .intro__description-2 {
-  padding-right: 20px;
-  padding-left: 21px;
+  padding-right: 25px;
+  padding-left: 43px;
 }
 
 .intro__description-1 {
@@ -48,7 +49,7 @@
 .icon-intro__description-1 {
   position: absolute;
   top: -1px;
-  left: -20px;
+  left: 0;
 
   fill: $pink;
 }
@@ -56,17 +57,18 @@
 .icon-intro__description-2 {
   position: absolute;
   top: 45px;
-  left: -20px;
+  left: 0;
 
   fill: $pink;
 }
 
 .intro .button {
-  margin-left: 7px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .intro {
+    min-height: 710px;
     padding-top: 109px;
 
     background-image: url(../../img/intro/intro-bg-tablet.png);
@@ -75,11 +77,14 @@
     .container {
       display: flex;
       flex-direction: column;
+      align-content: flex-start;
+      align-items: flex-start;
     }
   }
 
   .intro__title {
-    margin-left: 5px;
+    margin: 0;
+    margin-bottom: 15px;
 
     font-size: 60px;
     line-height: 55px;
@@ -88,21 +93,22 @@
   }
 
   .intro__remark {
-    margin-bottom: 53px;
-    margin-left: 5px;
+    margin: 0;
+    margin-bottom: 52px;
 
     font-size: 36px;
     text-align: left;
   }
 
   .intro .button {
-    margin-bottom: 163px;
+    margin: 0;
+    margin-bottom: 164px;
   }
 
   .intro-description--wrapper {
     display: flex;
     order: 2;
-    margin-left: 50px;
+    margin-left: 23px;
 
     p {
       position: relative;
@@ -120,7 +126,7 @@
 
   .icon-intro__description-1 {
     top: -16px;
-    left: -43px;
+    left: -23px;
 
     width: 55px;
     height: 55px;
@@ -128,7 +134,7 @@
 
   .icon-intro__description-2 {
     top: -15px;
-    left: -50px;
+    left: -30px;
 
     width: 55px;
     height: 54px;
@@ -147,6 +153,7 @@
   .intro__title {
     margin-bottom: 13px;
     margin-left: 0;
+
     font-size: 78px;
     line-height: 70px;
     letter-spacing: 5.87px;
@@ -160,13 +167,11 @@
   }
 
   .intro .button {
-    margin-left: 0;
     margin-bottom: 145px;
+    margin-left: 0;
   }
 
   .intro-description--wrapper {
-    margin-left: 45px;
+    margin-left: 23px;
   }
-
-
 }

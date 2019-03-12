@@ -25,6 +25,7 @@ img {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
@@ -39,9 +40,10 @@ p {
 }
 
 .button {
+  display: block;
   width: 226px;
   height: 51px;
-  margin: 0 auto;
+  margin: 0;
 
   font-size: 13px;
   color: white;

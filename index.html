@@ -78,6 +78,7 @@
               <h3 class="catalog__cake-type">Классические</h3>
               <span class="catalog__cake-kinds">24 вида</span>
               <picture class="catalog__image">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog__cake-desktop-1.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog__cake-tablet-1.jpg">
                 <img src="img/catalog/catalog__cake-mobile-1.png" alt="Торты Классические">
               </picture>
@@ -88,6 +89,7 @@
               <h3 class="catalog__cake-type">Муссовые</h3>
               <span class="catalog__cake-kinds">12 вида</span>
               <picture class="catalog__image">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog__cake-desktop-2.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog__cake-tablet-2.jpg">
                 <img src="img/catalog/catalog__cake-mobile-2.png" alt="Торты Муссовые">
               </picture>
@@ -96,6 +98,7 @@
               <h3 class="catalog__cake-type">Свадебные</h3>
               <span class="catalog__cake-kinds">20 вида</span>
               <picture class="catalog__image">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog__cake-desktop-3.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog__cake-tablet-3.jpg">
                 <img src="img/catalog/catalog__cake-mobile-3.png" alt="Торты Свадебные">
               </picture>
@@ -116,6 +119,7 @@
               <h3 class="catalog__cake-type">Мужчинам</h3>
               <span class="catalog__cake-kinds">12 вида</span>
               <picture class="catalog__image">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog__cake-desktop-4.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog__cake-tablet-4.jpg">
                 <img src="img/catalog/catalog__cake-mobile-4.png" alt="Торты Мужчинам">
               </picture>
@@ -124,6 +128,7 @@
               <h3 class="catalog__cake-type">Женщинам</h3>
               <span class="catalog__cake-kinds">16 вида</span>
               <picture class="catalog__image">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog__cake-desktop-5.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog__cake-tablet-5.jpg">
                 <img src="img/catalog/catalog__cake-mobile-5.png" alt="Торты Женщинам">
               </picture>
@@ -144,6 +149,7 @@
               <h3 class="catalog__cake-type">Детские</h3>
               <span class="catalog__cake-kinds">18 вида</span>
               <picture class="catalog__image">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog__cake-desktop-6.jpg">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog__cake-tablet-6.jpg">
                 <img src="img/catalog/catalog__cake-mobile-6.png" alt="Торты Детские">
               </picture>
@@ -154,65 +160,67 @@
     </section>
 
     <section class="custom-order">
-      <h2 class="custom-order__title">Индивидуальный заказ</h2>
-      <span class="custom-order__remark">Соберите торт в 3 шага</span>
+      <div class="container">
+        <h2 class="custom-order__title">Индивидуальный заказ</h2>
+        <span class="custom-order__remark">Соберите торт в 3 шага</span>
 
-      <ul class="custom-order__list">
-        <li class="custom-order__item">
-          <h3 class="custom-order__item-title">01 Выберите начинку</h3>
-          <picture class="">
+        <ul class="custom-order__list">
+          <li class="custom-order__item">
+            <h3 class="custom-order__item-title">01 Выберите начинку</h3>
+            <picture class="">
 
-          </picture>
-          <div class="custom-order__img-slider"></div>
-          <h4>Шоколадный ганаш</h4>
-          <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый
-            шоколадный из всех возможных десертов!</p>
-          <span>1000 руб/кг</span>
-          <button>Выбрать</button>
-        </li>
-        <li class="custom-order__item">
-          <h3 class="custom-order__item-title">02 Размер</h3>
-          <svg class="icon-circle-small" width="109" height="109">
-            <use xlink:href="#icon-circle-small"></use>
-          </svg>
-          <div class="custom-order__img-slider"></div>
-          <span>17-18см
-            <br>
-            (1 кг – 6 персон)
-          </span>
-          <button>Выбрать</button>
-        </li>
-        <li class="custom-order__item">
-          <h3 class="custom-order__item-title">03 Оформление</h3>
-          <div class="custom-order__img-slider"></div>
-          <p>Маршмэллоу</p>
-          <span>600 руб/кг</span>
-          <button>Выбрать</button>
-        </li>
-      </ul>
-      <form class="choice-form" method="get" action="https://echo.htmlacademy.ru">
-        <h3 class="choice-form__title">Ваш выбор</h3>
+            </picture>
+            <div class="custom-order__img-slider"></div>
+            <h4>Шоколадный ганаш</h4>
+            <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый
+              шоколадный из всех возможных десертов!</p>
+            <span>1000 руб/кг</span>
+            <button>Выбрать</button>
+          </li>
+          <li class="custom-order__item">
+            <h3 class="custom-order__item-title">02 Размер</h3>
+            <svg class="icon-circle-small" width="109" height="109">
+              <use xlink:href="#icon-circle-small"></use>
+            </svg>
+            <div class="custom-order__img-slider"></div>
+            <span>17-18см
+              <br>
+              (1 кг – 6 персон)
+            </span>
+            <button>Выбрать</button>
+          </li>
+          <li class="custom-order__item">
+            <h3 class="custom-order__item-title">03 Оформление</h3>
+            <div class="custom-order__img-slider"></div>
+            <p>Маршмэллоу</p>
+            <span>600 руб/кг</span>
+            <button>Выбрать</button>
+          </li>
+        </ul>
+        <form class="choice-form" method="get" action="https://echo.htmlacademy.ru">
+          <h3 class="choice-form__title">Ваш выбор</h3>
 
-        <p class="choice-form__option-name">Начинка</p>
-        <select name="filling">
-          <option value="Шоколадный ганаш">Шоколадный ганаш</option>
-        </select>
+          <p class="choice-form__option-name">Начинка</p>
+          <select name="filling">
+            <option value="Шоколадный ганаш">Шоколадный ганаш</option>
+          </select>
 
-        <p class="choice-form__option-name">Размер</p>
-        <select name="size">
-          <option value="1 кг">1 кг</option>
-          <option value="2 кг">2 кг</option>
-          <option value="5 кг">5 кг</option>
-          <option value="8 кг">8 кг</option>
-        </select>
+          <p class="choice-form__option-name">Размер</p>
+          <select name="size">
+            <option value="1 кг">1 кг</option>
+            <option value="2 кг">2 кг</option>
+            <option value="5 кг">5 кг</option>
+            <option value="8 кг">8 кг</option>
+          </select>
 
-        <p class="choice-form__option-name">Оформление</p>
-        <select name="decor">
-          <option value="Маршмэллоу">Маршмэллоу</option>
-        </select>
+          <p class="choice-form__option-name">Оформление</p>
+          <select name="decor">
+            <option value="Маршмэллоу">Маршмэллоу</option>
+          </select>
 
-        <button class="choice-form__button" type="submit">Заказать торт</button>
-      </form>
+          <button class="choice-form__button" type="submit">Заказать торт</button>
+        </form>
+      </div>
     </section>
 
     <article class="reviews">

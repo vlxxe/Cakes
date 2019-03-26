@@ -143,10 +143,11 @@
 
 @media (min-width: $desktop-width) {
   .intro {
+    min-height: 950px;
     padding-top: 156px;
 
     background-image: url(../../img/intro/intro-bg-desktop.png);
-    background-position-x: calc((100% - 50%) + 298px);
+    background-position-x: calc((100% - 50%) + 307px);
     background-position-y: 17px;
   }
 

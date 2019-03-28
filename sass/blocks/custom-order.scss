@@ -10,13 +10,91 @@
 
 .custom-order__remark {
   display: block;
-  text-align: center;
+  margin-bottom: 19px;
 
   font-size: 22px;
   font-family: "introScript";
+  text-align: center;
   color: #32313d;
 }
 
+.custom-order__item {
+  margin-bottom: 10px;
+  padding: 8px  18px;
+  padding-bottom: 25px;
+
+  background-color: #ffffff;
+}
+
+.custom-order__inner-step {
+  margin-bottom: 12px;
+}
+
+.custom-order__item-step,
+.custom-order__item-title {
+  display: inline-block;
+
+  font-weight: 700;
+  font-family: "playfair";
+  color: #f50049;
+}
+
+.custom-order__item-step {
+  margin-right: 9px;
+
+  font-size: 30px;
+}
+
+.custom-order__item-title {
+  font-size: 16px;
+}
+
+.custom-order__filling-name {
+  margin-top: 33px;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-family: "Circe";
+  letter-spacing: 0.16px;
+}
+
+.custom-order__filling-desc {
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+.custom-order__price {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "playfair";
+  text-align: center;
+}
+
+.custom-order__item .button {
+  width: 178px;
+  margin: 0 auto;
+}
+
+.icon-circle-small {
+  display: block;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 69px;
+}
+
+.custom-order__size-person {
+  display: block;
+  margin-bottom: 58px;
+
+  font-size: 14px;
+  text-align: center;
+  color: #2f2f2f;
+}
 
 @media (min-width: $tablet-width) {
   .custom-order__title {
@@ -26,6 +104,14 @@
 
   .custom-order__remark {
     font-size: 26px;
+  }
+
+  .custom-order__filling-name {
+    font-size: 18px;
+  }
+
+  .custom-order__price {
+    font-size: 20px;
   }
 }
 
@@ -37,5 +123,18 @@
 
   .custom-order__remark {
     font-size: 35px;
-  } 
+  }
+
+  .custom-order__filling-name {
+    font-size: 20px;
+  }
+
+  .custom-order__filling-desc {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .custom-order__price {
+    font-size: 22px;
+  }
 }

@@ -166,35 +166,46 @@
 
         <ul class="custom-order__list">
           <li class="custom-order__item">
-            <h3 class="custom-order__item-title">01 Выберите начинку</h3>
-            <picture class="">
-
+            <div class="custom-order__inner-step">
+              <span class="custom-order__item-step">01</span>
+              <p class="custom-order__item-title">Выберите начинку</p>
+            </div>
+            <picture class="custom-order__image">
+              <source media="(min-width: 1366px)" srcset="img/custom-order/custom-order__filling-desktop-1.png">
+              <source media="(min-width: 768px)" srcset="img/custom-order/custom-order__filling-tablet-1.png">
+              <img src="img/custom-order/custom-order__filling-mobile-1.png" alt="Начинка">
             </picture>
             <div class="custom-order__img-slider"></div>
-            <h4>Шоколадный ганаш</h4>
-            <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый
+            <h4 class="custom-order__filling-name">Шоколадный ганаш</h4>
+            <p class="custom-order__filling-desc">Ароматный шоколадный бисквит, густой шоколадный крем – самый
               шоколадный из всех возможных десертов!</p>
-            <span>1000 руб/кг</span>
-            <button>Выбрать</button>
+            <span class="custom-order__price">1000 руб/кг</span>
+            <button class="button">Выбрать</button>
           </li>
           <li class="custom-order__item">
-            <h3 class="custom-order__item-title">02 Размер</h3>
+            <div class="custom-order__inner-step">
+              <span class="custom-order__item-step">02</span>
+              <p class="custom-order__item-title">Размер</p>
+            </div>
             <svg class="icon-circle-small" width="109" height="109">
               <use xlink:href="#icon-circle-small"></use>
             </svg>
             <div class="custom-order__img-slider"></div>
-            <span>17-18см
+            <span class="custom-order__size-person">17-18 см
               <br>
               (1 кг – 6 персон)
             </span>
-            <button>Выбрать</button>
+            <button class="button">Выбрать</button>
           </li>
           <li class="custom-order__item">
-            <h3 class="custom-order__item-title">03 Оформление</h3>
+            <div class="custom-order__inner-step">
+              <span class="custom-order__item-step">03</span>
+              <p class="custom-order__item-title">Оформление</p>
+            </div>
             <div class="custom-order__img-slider"></div>
             <p>Маршмэллоу</p>
             <span>600 руб/кг</span>
-            <button>Выбрать</button>
+            <button class="button">Выбрать</button>
           </li>
         </ul>
         <form class="choice-form" method="get" action="https://echo.htmlacademy.ru">
@@ -206,7 +217,7 @@
           </select>
 
           <p class="choice-form__option-name">Размер</p>
-          <select name="size">
+          <select name="  ">
             <option value="1 кг">1 кг</option>
             <option value="2 кг">2 кг</option>
             <option value="5 кг">5 кг</option>
@@ -218,7 +229,7 @@
             <option value="Маршмэллоу">Маршмэллоу</option>
           </select>
 
-          <button class="choice-form__button" type="submit">Заказать торт</button>
+          <button class="choice-form__button button" type="submit">Заказать торт</button>
         </form>
       </div>
     </section>

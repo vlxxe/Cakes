@@ -5,6 +5,8 @@
   <title>Торты на заказ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -165,67 +167,95 @@
         <span class="custom-order__remark">Соберите торт в 3 шага</span>
 
         <ul class="custom-order__list">
-          <li class="custom-order__item">
+          <li class="custom-order__item custom-order__item--filling">
             <div class="custom-order__inner-step">
               <span class="custom-order__item-step">01</span>
               <p class="custom-order__item-title">Выберите начинку</p>
             </div>
-            <picture class="custom-order__image">
-              <source media="(min-width: 1366px)" srcset="img/custom-order/custom-order__filling-desktop-1.png">
-              <source media="(min-width: 768px)" srcset="img/custom-order/custom-order__filling-tablet-1.png">
-              <img src="img/custom-order/custom-order__filling-mobile-1.png" alt="Начинка">
-            </picture>
-            <div class="custom-order__img-slider"></div>
-            <h4 class="custom-order__filling-name">Шоколадный ганаш</h4>
-            <p class="custom-order__filling-desc">Ароматный шоколадный бисквит, густой шоколадный крем – самый
-              шоколадный из всех возможных десертов!</p>
-            <span class="custom-order__price">1000 руб/кг</span>
+            <div class="owl-carousel owl-theme">
+              <div>
+                <picture class="custom-order__image">
+                  <source media="(min-width: 1366px)" srcset="img/custom-order/custom-order__filling-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/custom-order/custom-order__filling-tablet.png">
+                  <img src="img/custom-order/custom-order__filling-mobile.png" alt="Начинка">
+                </picture>
+                <h4 class="custom-order__name">Шоколадный ганаш</h4>
+                <p class="custom-order__desc">Ароматный шоколадный бисквит, густой шоколадный крем – самый
+                  шоколадный из всех возможных десертов!</p>
+                <span class="custom-order__price">1000 руб/кг</span>
+              </div>
+              <div>Слайд 2</div>
+              <div>Слайд 3</div>
+              <div>Слайд 4</div>
+              <div>Слайд 5</div>
+            </div>
             <button class="button">Выбрать</button>
           </li>
-          <li class="custom-order__item">
+          <li class="custom-order__item custom-order__item--size">
             <div class="custom-order__inner-step">
               <span class="custom-order__item-step">02</span>
               <p class="custom-order__item-title">Размер</p>
             </div>
-            <svg class="icon-circle-small" width="109" height="109">
-              <use xlink:href="#icon-circle-small"></use>
-            </svg>
-            <div class="custom-order__img-slider"></div>
-            <span class="custom-order__size-person">17-18 см
-              <br>
-              (1 кг – 6 персон)
-            </span>
+            <div class="owl-carousel owl-theme size">
+              <div>
+                <svg class="icon-circle-small" width="109" height="109">
+                  <use xlink:href="#icon-circle-small"></use>
+                </svg>
+                <div class="custom-order__img-slider"></div>
+                <span class="custom-order__size-person">
+                  17-18 см
+                  <br>
+                  (1 кг – 6 персон)
+                </span>
+              </div>
+              <div>Слайд 2</div>
+              <div>Слайд 3</div>
+              <div>Слайд 4</div>
+            </div>
             <button class="button">Выбрать</button>
           </li>
-          <li class="custom-order__item">
+          <li class="custom-order__item custom-order__item--decor">
             <div class="custom-order__inner-step">
               <span class="custom-order__item-step">03</span>
               <p class="custom-order__item-title">Оформление</p>
             </div>
-            <div class="custom-order__img-slider"></div>
-            <p>Маршмэллоу</p>
-            <span>600 руб/кг</span>
+            <div class="owl-carousel owl-theme">
+              <div>
+                <picture class="custom-order__image">
+                  <source media="(min-width: 1366px)" srcset="img/custom-order/custom-order__decor-desktop-1.png">
+                  <source media="(min-width: 768px)" srcset="img/custom-order/custom-order__decor-tablet-1.png">
+                  <img src="img/custom-order/custom-order__decor-mobile-1.jpg" alt="Оформление">
+                </picture>
+                <div class="custom-order__img-slider"></div>
+                <p class="custom-order__name">Маршмэллоу</p>
+                <span class="custom-order__price">600 руб/кг</span>
+              </div>
+              <div>Слайд 2</div>
+              <div>Слайд 3</div>
+              <div>Слайд 4</div>
+              <div>Слайд 5</div>
+            </div>
             <button class="button">Выбрать</button>
           </li>
         </ul>
         <form class="choice-form" method="get" action="https://echo.htmlacademy.ru">
           <h3 class="choice-form__title">Ваш выбор</h3>
 
-          <p class="choice-form__option-name">Начинка</p>
-          <select name="filling">
+          <p class="choice-form__option-name choice-form__option-name--filling">Начинка</p>
+          <select class="choice-form__menu" name="filling">
             <option value="Шоколадный ганаш">Шоколадный ганаш</option>
           </select>
 
-          <p class="choice-form__option-name">Размер</p>
-          <select name="  ">
+          <p class="choice-form__option-name choice-form__option-name--size">Размер</p>
+          <select class="choice-form__menu" name="size">
             <option value="1 кг">1 кг</option>
             <option value="2 кг">2 кг</option>
             <option value="5 кг">5 кг</option>
             <option value="8 кг">8 кг</option>
           </select>
 
-          <p class="choice-form__option-name">Оформление</p>
-          <select name="decor">
+          <p class="choice-form__option-name choice-form__option-name--decor">Оформление</p>
+          <select class="choice-form__menu" name="decor">
             <option value="Маршмэллоу">Маршмэллоу</option>
           </select>
 
@@ -424,7 +454,9 @@
     <span class="main-footer__copyright">© 2018 Cakes</span>
 
   </footer>
-  <script src="js/common.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>

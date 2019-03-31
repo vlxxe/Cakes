@@ -18,17 +18,24 @@ var del = require("del");
 var concat = require("gulp-concat"); // Объединение файлов
 var uglify = require("gulp-uglify"); // Минимизация js
 
-gulp.task('common-js', function () { //Минификация common.js
+gulp.task('js', function () { //Минификация js
   return gulp.src([
-      'js/common.js'
+			'node_modules/jquery/dist/jquery.min.js',
+			'node_modules/owl.carousel/dist/owl.carousel.min.js',
+      'js/scripts.js'
     ])
     .pipe(gulp.dest('build/js'))
     .pipe(uglify())
-    .pipe(rename('common.min.js'))
+    .pipe(rename('scripts.min.js'))
 		.pipe(gulp.dest('build/js'))
 });
 
 gulp.task("style", function () { // sass в css
+	return gulp.src([
+		'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+		'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'
+	])
+	.pipe(gulp.dest('build/css')),
 	gulp.src("sass/main.+(sass|scss)")
 		.pipe(plumber())
 		.pipe(wait(100))
@@ -55,7 +62,7 @@ gulp.task("serve", function () { // LiveServer build
 	});
 
 	gulp.watch("sass/**/*.scss", ["style"]).on("change", server.reload);
-	gulp.watch(['js/common.js'], ["common-js"]).on("change", server.reload);
+	gulp.watch(['js/scripts.js'], ["js"]).on("change", server.reload);
 	gulp.watch("*.html", ["html"]).on("change", server.reload);
 });
 
@@ -64,7 +71,7 @@ gulp.task("build", function (done) { // Создание билда
 		"clean",
 		"copy",
 		"style",
-    "common-js",
+    "js",
 		"images",
 		"sprite",
 		"html",

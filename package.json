@@ -27,5 +27,9 @@
     "test": "editorconfig-cli",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4"
   }
 }

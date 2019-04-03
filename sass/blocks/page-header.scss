@@ -4,6 +4,19 @@
   min-height: 40px;
 
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+
+    background-color: $light-pink;
+  }
 }
 
 .page-header__logo {
@@ -17,10 +30,23 @@
   font-family: "playfair";
   color: #000000;
   letter-spacing: 0.24px;
-}
 
-.page-header__phone {
-  display: none;
+  @media (min-width: $tablet-width) {
+    margin: 0 47px;
+    margin-top: 22px;
+    margin-bottom: 7px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 60px;
+    margin-left: 72px;
+
+    font-size: 23.24px;
+    letter-spacing: 0.75px;
+  }
 }
 
 .main-nav__list {
@@ -29,6 +55,23 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+
+    width: 322px;
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-top: 69px;
+    margin-left: 47px;
+  }
 }
 
 .main-nav__item a {
@@ -43,6 +86,42 @@
 
   background-color: #e7e7e7;
   border-bottom: 1px solid #dedede;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-right: 43px;
+    padding: 0;
+
+    font-size: 13px;
+
+    background-color: transparent;
+    border: none;
+    &:hover {
+      color: $pink;
+    }
+  }
+}
+
+.page-header__phone {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 23px;
+    margin-right: 46px;
+
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 68px;
+    margin-right: 56px;
+    margin-left: auto;
+  }
 }
 
 .main-nav__toggle {
@@ -58,6 +137,14 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 21px;
+    left: 132px;
+
+    width: 25px;
+    height: 20px;
+  }
 }
 
 .main-nav .main-nav__toggle::before {
@@ -71,6 +158,19 @@
 
   background-color: #000000;
   box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+
+  @media (min-width: $tablet-width) {
+    width: 25px;
+    height: 2px;
+
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -86,106 +186,5 @@
     position: relative;
 
     display: block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    min-height: 60px;
-  }
-
-  .page-header__logo {
-    margin: 0 47px;
-    margin-top: 22px;
-    margin-bottom: 7px;
-
-    font-size: 20px;
-  }
-
-  .main-nav__list {
-    left: 0;
-
-    width: 322px;
-    margin-top: 60px;
-  }
-
-  .main-nav__toggle {
-    top: 21px;
-    left: 132px;
-
-    width: 25px;
-    height: 20px;
-  }
-
-  .main-nav .main-nav__toggle::before {
-    width: 25px;
-    height: 2px;
-
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-  }
-
-  .page-header__phone {
-    display: block;
-    margin-top: 23px;
-    margin-right: 46px;
-
-    font-weight: 700;
-    font-size: 15px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    justify-content: flex-start;
-
-    background-color: $light-pink;
-  }
-
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .page-header__logo {
-    margin: 0;
-    margin-top: 60px;
-    margin-left: 72px;
-
-    font-size: 23.24px;
-    letter-spacing: 0.75px;
-  }
-  .main-nav__list {
-    position: relative;
-
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    margin-top: 69px;
-    margin-left: 47px;
-  }
-
-  .main-nav__item a {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin-right: 43px;
-    padding: 0;
-
-    font-size: 13px;
-
-    background-color: transparent;
-    border: none;
-    &:hover {
-      color: $pink;
-    }
-  }
-
-  .page-header__phone {
-    margin: 0;
-    margin-top: 68px;
-    margin-right: 56px;
-    margin-left: auto;
   }
 }

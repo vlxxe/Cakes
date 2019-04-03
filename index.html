@@ -184,7 +184,7 @@
                   <p class="custom-order__desc">Ароматный шоколадный бисквит, густой шоколадный крем – самый
                     шоколадный из всех возможных десертов!</p>
                   <span class="custom-order__price">1000 руб/кг</span>
-                  <button class="button">Выбрать</button>
+                  <button class="custom-order__item-button button">Выбрать</button>
                 </div>
               </div>
               <div>Слайд 2</div>
@@ -198,23 +198,60 @@
               <span class="custom-order__item-step">02</span>
               <p class="custom-order__item-title">Размер</p>
             </div>
-            <div class="owl-carousel owl-theme size">
+            <div class="owl-carousel owl-theme">
               <div>
-                <svg class="icon-circle-small" width="109" height="109">
-                  <use xlink:href="#icon-circle-small"></use>
-                </svg>
-                <div class="custom-order__img-slider"></div>
+                  <picture class="custom-order__image">
+                      <source media="(min-width: 1366px)" srcset="img/custom-order/circle-1-desktop.png">
+                      <source media="(min-width: 768px)" srcset="img/custom-order/circle-1-tablet.png">
+                        <img src="img/custom-order/circle-1-mobile.png" alt="Размер">
+                    </picture>
                 <span class="custom-order__size-person">
                   17-18 см
                   <br>
                   (1 кг – 6 персон)
                 </span>
+                <button class="custom-order__item-button button">Выбрать</button>
               </div>
-              <div>Слайд 2</div>
-              <div>Слайд 3</div>
-              <div>Слайд 4</div>
+              <div>
+                <picture class="custom-order__image">
+                      <source media="(min-width: 1366px)" srcset="img/custom-order/circle-2-desktop.png">
+                      <source media="(min-width: 768px)" srcset="img/custom-order/circle-2-tablet.png">
+                        <img src="img/custom-order/circle-1-mobile.png" alt="Размер">
+                    </picture>
+                <span class="custom-order__size-person">
+                  17-18 см
+                  <br>
+                  (1 кг – 6 персон)
+                </span>
+                <button class="custom-order__item-button button">Выбрать</button>
+              </div>
+              <div>
+                <picture class="custom-order__image">
+                      <source media="(min-width: 1366px)" srcset="img/custom-order/circle-3-desktop.png">
+                      <source media="(min-width: 768px)" srcset="img/custom-order/circle-3-tablet.png">
+                        <img src="img/custom-order/circle-3-mobile.png" alt="Размер">
+                    </picture>
+                <span class="custom-order__size-person">
+                  17-18 см
+                  <br>
+                  (1 кг – 6 персон)
+                </span>
+                <button class="custom-order__item-button button">Выбрать</button>
+              </div>
+              <div>
+                <picture class="custom-order__image">
+                      <source media="(min-width: 1366px)" srcset="img/custom-order/circle-4-desktop.png">
+                      <source media="(min-width: 768px)" srcset="img/custom-order/circle-4-tablet.png">
+                        <img src="img/custom-order/circle-4-mobile.png" alt="Размер">
+                    </picture>
+                <span class="custom-order__size-person">
+                  17-18 см
+                  <br>
+                  (1 кг – 6 персон)
+                </span>
+                <button class="custom-order__item-button button">Выбрать</button>
+              </div>
             </div>
-            <button class="button">Выбрать</button>
           </li>
           <li class="custom-order__item custom-order__item--decor">
             <div class="custom-order__inner-step">
@@ -237,7 +274,7 @@
               <div>Слайд 4</div>
               <div>Слайд 5</div>
             </div>
-            <button class="button">Выбрать</button>
+            <button class="custom-order__item-button button">Выбрать</button>
           </li>
         </ul>
         <form class="choice-form" method="get" action="https://echo.htmlacademy.ru">

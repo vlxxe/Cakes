@@ -14,11 +14,10 @@ navToggle.addEventListener('click', function () {
 
 $(function () {
   $('.custom-order__item--filling .owl-carousel').owlCarousel({
-    loop: true, //Зацикливаем слайдер
-    margin: 50, //Отступ от элемента справа в 50px
-    smartSpeed: 1000, //Время движения слайда
-    autoplayTimeout: 2000, //Время смены слайда
-    responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+    loop: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 2000,
+    responsive: {
       0: {
         items: 1
       },
@@ -33,18 +32,16 @@ $(function () {
 
 $(function () {
   $('.custom-order__item--size .owl-carousel').owlCarousel({
-    loop: true, //Зацикливаем слайдер
-    margin: -20, //Отступ от элемента справа в 50px
-    smartSpeed: 1000, //Время движения слайда
-    autoplayTimeout: 2000, //Время смены слайда
-    responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+    loop: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 2000,
+    responsive: {
       0: {
         items: 1
       },
       768: {
         loop: false,
-        items: 4,
-        autoWidth: true
+        items: 4
       }
     }
   });
@@ -52,17 +49,37 @@ $(function () {
 
 $(function () {
   $('.custom-order__item--decor .owl-carousel').owlCarousel({
-    loop: true, //Зацикливаем слайдер
-    margin: 50, //Отступ от элемента справа в 50px
-    smartSpeed: 1000, //Время движения слайда
-    autoplayTimeout: 2000, //Время смены слайда
-    responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+    loop: true,
+    margin: 20,
+    smartSpeed: 1000,
+    autoplayTimeout: 2000,
+    responsive: {
       0: {
         items: 1
       },
       768: {
         loop: false,
-        items: 2
+        items: 2,
+        dots: false,
+        autoWidth: true
+      }
+    }
+  });
+});
+
+$(function () {
+  $('.reviews .owl-carousel').owlCarousel({
+    loop: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 2000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        loop: true,
+        items: 1,
+        dots: false
       }
     }
   });

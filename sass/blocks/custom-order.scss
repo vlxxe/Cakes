@@ -50,6 +50,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+
     font-size: 35px;
   }
 }
@@ -77,13 +79,21 @@
     align-content: flex-start;
     align-items: flex-start;
     width: 728px;
-    height: 348px;
+    min-height: 348px;
     margin-bottom: 21px;
     padding: 32px 44px;
+    box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.15);
+
+    &:last-child {
+      box-shadow: 0px -4px 6px 1px rgba(0, 0, 0, 0.15);
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    min-height: 569px;
+    margin-bottom: 35px;
+    padding: 54px 81px;
   }
 }
 
@@ -115,6 +125,10 @@
 
     font-size: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 58px;
+  }
 }
 
 .custom-order__item-title {
@@ -125,19 +139,27 @@
 
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+
+    font-size: 27px;
+  }
 }
 
 .custom-order__image {
   display: block;
 
   text-align: center;
-  img {
-    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.15);
-  }
 }
 
 .custom-order__name {
+  font-size: 16px;
   color: #2f2f2f;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
@@ -151,7 +173,7 @@
   color: #2f2f2f;
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
 }
@@ -164,14 +186,16 @@
   font-size: 18px;
   font-family: "playfair";
   text-align: center;
-  
+
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
 
     font-size: 20px;
   }
-  
+
   @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+
     font-size: 22px;
   }
 }
@@ -179,7 +203,7 @@
 .custom-order__item-button {
   width: 178px;
   margin: 0 auto;
-  
+
   @media (min-width: $tablet-width) {
     width: 135px;
     height: 43px;
@@ -187,12 +211,35 @@
 
     font-size: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 179px;
+    height: 51px;
+
+    font-size: 13px;
+  }
 }
 
 .choice-form {
   min-height: 360px;
 
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    min-height: 121px;
+    padding: 0 45px;
+
+    box-shadow: 0px 5px 6px 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-top: -10px;
+    min-height: 196px;
+  }
 }
 
 .choice-form__title {
@@ -204,6 +251,39 @@
   font-size: 22px;
   font-family: "playfair";
   letter-spacing: 0.22;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: -9px;
+    padding: 0;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    margin-bottom: 17px;
+    padding-left: 29px;
+
+    font-size: 27px;
+  }
+}
+
+.choice-form--wrapper-item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+
+    .choice-form__option-name {
+      margin: 0;
+      margin-bottom: 6px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 27px;
+  }
 }
 
 .choice-form__option-name {
@@ -213,6 +293,16 @@
   font-family: "introScript";
   text-align: center;
   color: $pink;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 27px;
+  }
 }
 
 .choice-form__menu {
@@ -225,28 +315,48 @@
   color: #2d2829;
 
   border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .choice-form__button {
   margin: 0 auto;
   margin-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    height: 43px;
+    margin: 0;
+    margin-top: 14px;
+    margin-left: auto;
+
+    font-size: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+    margin-left: 118px;
+    width: 226px;
+    height: 51px;
+
+    font-size: 13px;
+  }
 }
 
-//style for item--filling //
+//style for item--filling ///////////////////////////////////////////////////
+
 .custom-order__item--filling {
-  
   .custom-order__name {
     margin-top: 36px;
     margin-bottom: 5px;
 
-    font-size: 16px;
     letter-spacing: 0.16px;
   }
-  @media (min-width: $tablet-width) {
-    .custom-order__item-title {
-      font-size: 18px;
-    }
 
+  @media (min-width: $tablet-width) {
     .custom-order__inner-desc {
       display: flex;
       flex-direction: column;
@@ -255,23 +365,49 @@
       width: 200px;
       margin-top: -14px;
       margin-left: 25px;
-      overflow: visible;
+      /* overflow: visible; */
     }
 
     .custom-order__desc {
       margin-bottom: 12px;
     }
+  }
 
-    .custom-order__name {
-      font-size: 18px;
+  @media (min-width: $desktop-width) {
+    .custom-order__inner-desc {
+      width: 270px;
+      margin-top: 30px;
+      margin-left: 40px;
+    }
+
+    .custom-order__desc {
+      margin-bottom: 17px;
+    }
+
+    .custom-order__item-button {
+      margin-left: 4px;
     }
   }
 }
 
-.choice-form__option-name--filling {
-  margin-right: 22px;
+.choice-form--wrapper-item--filling {
+  p {
+    margin-right: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+    margin-right: 167px;
+  }
 }
-//style for item--size //
+
+//style for item--size ////////////////////////////////////////////////
+
 .custom-order__item--size {
   .custom-order__image {
     margin-bottom: 70px;
@@ -282,31 +418,65 @@
   }
 
   @media (min-width: $tablet-width) {
-    .custom-order__image {
+    flex-wrap: wrap;
+    /* .custom-order__image {
       width: 210px;
+    } */
+
+    .custom-order__inner-step {
+      margin: 0;
     }
+
+    .custom-order__image {
+      margin: 0;
+    }
+
     .button {
       display: none;
     }
   }
-  
-  
+
   @media (min-width: $desktop-width) {
     flex-wrap: wrap;
-    padding-top: 35px;
+    padding: 52px 80px;
+
+    .custom-order__item-step {
+      font-size: 64px;
+    }
   }
 }
 
-.choice-form__option-name--size {
-  margin-right: 14px;
-  margin-bottom: 6px;
+.choice-form--wrapper-item--size {
+  p {
+    margin-right: 14px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 74px;
+    margin-right: 20px;
+
+    .choice-form__option-name {
+      margin-left: 7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 153px;
+  }
 }
-//style for item--decor //
+
+//style for item--decor ////////////////////////////////////////////////
+
 .custom-order__item--decor {
   .custom-order__inner-step {
     margin-bottom: 20px;
   }
-  
+
+  img {
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.15);
+  }
+
   .custom-order__name {
     margin-top: 36px;
     margin-bottom: 5px;
@@ -317,14 +487,42 @@
 
   .custom-order__price {
     margin-bottom: 27px;
-  }
-}
 
-.icon-circle-small {
-  display: block;
-  margin: 0 auto;
-  margin-top: 42px;
-  margin-bottom: 69px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .custom-order__name {
+      margin-top: 8px;
+      margin-bottom: 5px;
+    }
+
+    img {
+      box-shadow: none;
+    }
+
+    .custom-order__price {
+      font-size: 14px;
+    }
+
+    .button {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .custom-order__name {
+      margin-top: 38px;
+      margin-bottom: 0;
+
+      font-size: 20px;
+    }
+
+    .custom-order__price {
+      padding-bottom: 26px;
+      font-size: 22px;
+    }
+  }
 }
 
 .custom-order__size-person {
@@ -334,20 +532,34 @@
   font-size: 14px;
   text-align: center;
   color: #2f2f2f;
+
+  @media (min-width: $tablet-width) {
+    font-size: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
-.choice-form__option-name--decor {
-  margin-right: 15px;
-  margin-bottom: 6px;
+.icon-circle-small {
+  display: block;
+  margin: 0 auto;
+  margin-top: 42px;
+  margin-bottom: 69px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
+.choice-form--wrapper-item--decor {
+  p {
+    margin-right: 15px;
+    margin-bottom: 6px;
+  }
 
-
-
-
-
-
-
-
-
-
+  @media (min-width: $tablet-width) {
+    width: 160px;
+  }
+}

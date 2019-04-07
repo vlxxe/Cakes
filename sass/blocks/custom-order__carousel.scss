@@ -1,23 +1,24 @@
+// main carousel style //
+.owl-carousel {
+  .owl-item img {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .owl-dots {
+    position: absolute;
+  }
+
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+    .owl-item img {
+      margin: 0;
+    }
+  }
+}
+
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin: 0;
-}
-
-.custom-order__item--filling .owl-dots {
-  position: absolute;
-  top: 118px;
-  left: 89px;
-}
-
-.custom-order__item--size .owl-dots {
-  position: absolute;
-  top: 150px;
-  left: 97px;
-}
-
-.custom-order__item--decor .owl-dots {
-  position: absolute;
-  top: 202px;
-  left: 94px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -34,50 +35,183 @@
   background: $pink;
 }
 
-.owl-carousel {
-  .owl-item img {
-    width: auto;
-    margin: 0 auto;
-  }
+// style .custom-order__item--filling //
 
-  @media (min-width: $tablet-width) {
-    overflow: hidden;
-
-    div {
-      display: flex;
-      align-items: flex-start;
-      height: 332px;
-    }
-  }
-}
 .custom-order__item--filling {
+  .owl-dots {
+    top: 118px;
+    left: 89px;
+  }
+
   @media (min-width: $tablet-width) {
     .owl-carousel {
       margin-top: 21px;
+      margin-right: auto;
+    }
+
+    .custom-order__wrapper-for-carousel {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .owl-carousel {
+      margin-top: 35px;
+      margin-left: 77px;
     }
   }
 }
 
+
+// style .custom-order__item--size //
+
 .custom-order__item--size {
+  .owl-dots {
+    top: 150px;
+    left: 97px;
+  }
+
   @media (min-width: $tablet-width) {
     .owl-carousel {
-      height: 200px;
-      margin-left: 27px;
-      /* .owl-item:first-child {
-      width: 80px;
-    } */
+      margin-top: -15px;
     }
+
     .owl-item > div {
       flex-wrap: wrap;
       align-content: flex-start;
       align-items: flex-start;
-      .custom-order__image {
-        margin: 0;
-      }
+      padding-top: 15px;
+    }
 
-      .custom-order__size-person {
-        margin: 0;
+    .custom-order__image {
+      margin: 0;
+    }
+
+    .custom-order__size-person {
+      margin: 0;
+
+      line-height: 21px;
+      text-align: left;
+    }
+
+    .circle-1 {
+      margin-top: 48px;
+      margin-left: 27px;
+       + span {
+        padding-top: 19px;
+        padding-left: 27px;
       }
+    }
+
+    .circle-2 {
+      margin-top: 14px;
+       + span {
+        padding-top: 22px;
+        padding-left: 11px;
+      }
+    }
+
+    .circle-3 {
+      margin-left: -16px;
+       + span {
+        margin-left: -16px;
+        padding-top: 22px;
+      }
+    }
+
+    .circle-4 {
+      margin-top: -16px;
+       + span {
+        margin-left: -4px;
+        padding-top: 18px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .owl-carousel {
+      margin-top: -12px;
+    }
+
+    .owl-item>div {
+      padding-top: 25px;
+    }
+
+    .circle-1 {
+      margin-top: 59px;
+      margin-left: 108px;
+
+       + span {
+        padding-top: 35px;
+        padding-left: 112px;
+      }
+    }
+
+    .circle-2 {
+      margin-top: 14px;
+      margin-left: 23px;
+
+       + span {
+        padding-top: 35px;
+        padding-left: 47px;
+      }
+    }
+
+    .circle-3 {
+      margin-left: -23px;
+
+       + span {
+        padding-top: 28px;
+        margin-left: -25px;
+      }
+    }
+
+    .circle-4 {
+      margin-top: -30px;
+      margin-left: -42px;
+
+       + span {
+        margin-left: -40px;
+        padding-top: 32px;
+      }
+    }
+  }
+}
+
+// style .custom-order__item--decor //
+
+.custom-order__item--decor {
+  .owl-dots {
+    top: 202px;
+    left: 94px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .owl-carousel {
+      width: 420px;
+      margin-top: 39px;
+      margin-left: 42px;
+    }
+
+    .owl-item > div {
+      margin-top: 1px;
+      margin-left: 2px;
+      box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .owl-carousel {
+      margin-top: 62px;
+      margin-left: 166px;
+      width: 673px;
+    }
+
+    .owl-item > div {
+      width: 285px;
     }
   }
 }
@@ -86,3 +220,20 @@
   width: auto;
   margin: 0 auto;
 } */
+
+// style .reviews //
+
+.reviews {
+  .owl-dots {
+    top: 179px;
+    left: 112px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .owl-carousel {
+      width: 414px;
+      margin: 0 auto;
+    }
+  }
+}
+

@@ -1,0 +1,108 @@
+.reviews {
+  min-height: 283px;
+  
+  @media (min-width: $tablet-width) {
+    min-height: 320px;
+  }
+}
+
+.reviews__title {
+  margin-top: 44px;
+  margin-bottom: 15px;
+
+  font-size: 24px;
+  font-family: "playfair";
+  text-align: center;
+  letter-spacing: 0.6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+
+    font-size: 28px;
+    letter-spacing: 0.7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.reviews__item {
+  margin: 0 auto;
+
+  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    font-size: 14px;
+  }
+}
+
+.reviews__author-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-top: 32px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.reviews__inner {
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+    padding-left: 19px;
+  }
+}
+
+.reviews__author-name {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+
+  text-align: center;
+  b {
+    font-size: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 10px;
+
+    text-align: left;
+    b {
+      font-size: 16px;
+    }
+  }
+}
+
+.reviews__text {
+  width: 235px;
+  margin: 0 auto;
+
+  text-align: center;
+  a {
+    color: #f77a91;
+    text-decoration: underline;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 255px;
+    margin: 0;
+
+    text-align: left;
+  }
+}
+
+.about-us--wrapper-story-1,
+.about-us--wrapper-story-2 {
+  @media (min-width: $tablet-width) {
+    width: 327px;
+  }
+}

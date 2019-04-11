@@ -24,7 +24,7 @@ $(function () {
       768: {
         items: 1,
         dots: false,
-        nav: true
+        nav: false
       }
     }
   });
@@ -84,8 +84,4 @@ $(function () {
     }
   });
 });
-
-/* $(function () {
-  $('.owl-carousel').owlCarousel;
-}); */
 

@@ -1,8 +1,12 @@
 .about-us {
   min-height: 710px;
-  
+
   @media (min-width: $tablet-width) {
-   min-height: 560px;
+    min-height: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 1000px;
   }
 }
 
@@ -28,7 +32,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
     margin: 0;
-    margin-top: 20px;
+    padding-top: 20px;
 
     font-size: 28px;
     text-align: left;
@@ -36,6 +40,9 @@
 
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 18px;
+    padding-top: 50px;
+
     font-size: 40px;
   }
 }
@@ -48,6 +55,11 @@
     order: 2;
     margin: 0;
     margin-top: -43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -86px;
+    margin-right: 72px;
   }
 }
 
@@ -62,6 +74,10 @@
     order: 4;
     width: 100%;
     margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -117px;
   }
 }
 
@@ -85,24 +101,28 @@
   height: 36px;
   margin-bottom: 15px;
 
-  background-color: #ffffff;
-  border: 1px white solid;
   border-radius: 25px;
+  &:hover {
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.3s ease;
+  }
+
   svg {
-    margin: 8px 8px;
+    margin: 9px 10px;
 
     fill: #f6195b;
   }
 
   .social__link--vkonakte {
     svg {
-      margin: 5px 6px;
+      margin: 5px 2px;
     }
   }
 
   .social__link--twitter {
     svg {
-      margin: 9px 9px;
+      margin: 10px 10px;
     }
   }
 
@@ -115,10 +135,11 @@
 .about-us--wrapper {
   @media (min-width: $tablet-width) {
     order: 3;
-    width: 360px;
+    width: 335px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 535px;
   }
 }
 
@@ -139,9 +160,16 @@
 
 .about-us--wrapper-story-1 {
   margin-bottom: 27px;
-  
+
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -150,6 +178,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -196,16 +229,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 370px;
     order: 5;
+    width: 370px;
 
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.14px;
-    
+
     p {
       margin-bottom: 23px;
     }
   }
-}
 
+  @media (min-width: $desktop-width) {
+    width: 625px;
+    margin-top: 182px;
+
+    font-size: 25px;
+    line-height: 38px;
+
+    p {
+      margin-bottom: 41px;
+    }
+  }
+}

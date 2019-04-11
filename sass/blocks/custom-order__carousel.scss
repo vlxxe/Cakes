@@ -235,5 +235,11 @@
       margin: 0 auto;
     }
   }
+  
+  @media (min-width: $desktop-width) {
+    .owl-carousel {
+      width: 674px;
+    }
+  }
 }
 

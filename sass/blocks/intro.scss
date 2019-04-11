@@ -111,6 +111,7 @@
     display: flex;
     order: 2;
     margin-left: 23px;
+    margin-bottom: 0;
 
     p {
       position: relative;
@@ -138,6 +139,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 31px;
+    margin-bottom: 0;
   }
 }
 

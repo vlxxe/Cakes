@@ -1,0 +1,223 @@
+.contacts {
+  min-height: 707px;
+  /* background-color: #fbebea; */
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    min-height: 589px;
+
+    background-image: url(../../img/contacts/contacts-bg-tablet.png);
+    background-repeat: no-repeat;
+    background-position-x: calc((100% - 50%) + 227px);
+    background-position-y: 188px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 846px;
+
+    background-image: url(../../img/contacts/contacts-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position-x: calc((100% - 50%) + 274px);
+    background-position-y: 210px;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 3px;
+  padding-top: 38px;
+
+  font-size: 24px;
+  font-family: "playfair";
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 45px;
+
+    font-size: 28px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+    padding-top: 76px;
+
+    font-size: 40px;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    div {
+      width: 60%;
+    }
+    div + div {
+      width: 40%;
+      padding-left: 9px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    div {
+      width: 50%;
+    }
+
+    div + div {
+      width: 50%;
+      padding-left: 22px;
+
+      font-size: 20px;
+    }
+  }
+}
+
+.contacts__intro {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 22px;
+  font-family: "introScript";
+  color: #32313d;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+  }
+}
+
+.contacts__text {
+  margin-bottom: 9px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 505px;
+
+    font-size: 20px;
+  }
+}
+
+input[name="username"],
+input[name="email"] {
+  width: 280px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 346px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+  }
+}
+
+textarea[name="question"] {
+  width: 280px;
+  height: 120px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-left: 10px;
+
+  font-size: 14px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 346px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__button {
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  font-weight: 400;
+  font-size: 19px;
+  text-transform: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    height: 43px;
+    margin: 0;
+    margin-right: auto;
+
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+    height: 51px;
+
+    font-size: 19px;
+  }
+}
+
+.contacts__phone {
+  margin-bottom: 18px;
+}
+
+.contacts__email {
+  margin-bottom: 18px;
+}
+
+.contacts__social-text {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.contacts__social-item {
+  display: inline-block;
+  width: 62px;
+  height: 63px;
+  margin-right: 30px;
+
+  border-radius: 50px;
+
+  &:hover {
+    box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.3s ease;
+  }
+
+  svg {
+    display: block;
+
+    fill: #f6195b;
+  }
+
+  .social__link--vkonakte {
+    svg {
+      margin: 6px 10px;
+    }
+  }
+
+  .social__link--instagram {
+    svg {
+      margin: 15px 16px;
+    }
+  }
+}

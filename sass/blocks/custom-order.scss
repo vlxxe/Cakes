@@ -367,7 +367,6 @@
       width: 200px;
       margin-top: -14px;
       margin-left: 25px;
-      /* overflow: visible; */
     }
 
     .custom-order__desc {
@@ -421,9 +420,6 @@
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    /* .custom-order__image {
-      width: 210px;
-    } */
 
     .custom-order__inner-step {
       margin: 0;

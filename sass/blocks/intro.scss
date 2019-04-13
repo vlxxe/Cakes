@@ -3,7 +3,7 @@
   padding-top: 132px;
 
   background-color: $light-pink;
-  background-image: url(../../img/intro/intro-bg-mobile.png);
+  background-image: url(../img/intro/intro-bg-mobile.png);
   background-repeat: no-repeat;
   background-position: 50% -40px;
 
@@ -15,7 +15,7 @@
     min-height: 710px;
     padding-top: 109px;
 
-    background-image: url(../../img/intro/intro-bg-tablet.png);
+    background-image: url(../img/intro/intro-bg-tablet.png);
     background-position-x: calc((100% - 50%) + 236px);
     background-position-y: 12px;
     .container {
@@ -35,7 +35,7 @@
     min-height: 950px;
     padding-top: 156px;
 
-    background-image: url(../../img/intro/intro-bg-desktop.png);
+    background-image: url(../img/intro/intro-bg-desktop.png);
     background-position-x: calc((100% - 50%) + 392px);
     background-position-y: 17px;
 

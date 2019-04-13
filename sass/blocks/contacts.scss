@@ -7,7 +7,7 @@
     align-items: flex-start;
     min-height: 589px;
 
-    background-image: url(../../img/contacts/contacts-bg-tablet.png);
+    background-image: url(../img/contacts/contacts-bg-tablet.png);
     background-repeat: no-repeat;
     background-position-x: calc((100% - 50%) + 227px);
     background-position-y: 188px;
@@ -16,7 +16,7 @@
   @media (min-width: $desktop-width) {
     min-height: 846px;
 
-    background-image: url(../../img/contacts/contacts-bg-desktop.png);
+    background-image: url(../img/contacts/contacts-bg-desktop.png);
     background-repeat: no-repeat;
     background-position-x: calc((100% - 50%) + 274px);
     background-position-y: 210px;

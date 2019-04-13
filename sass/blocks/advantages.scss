@@ -1,7 +1,7 @@
 .advantages {
   min-height: 686px;
 
-  background-image: url(../../img/advantages/advantages-cake-mobile.png);
+  background-image: url(../img/advantages/advantages-cake-mobile.png);
   background-repeat: no-repeat;
   background-position: 50% 159%;
 
@@ -15,8 +15,8 @@
   @media (min-width: $tablet-width) {
     min-height: 696px;
 
-    background: url(../../img/advantages/advantages-cake-left-tablet.png) calc((100% - 50%) - 242px) 52px no-repeat,
-    url(../../img/advantages/advantages-cake-right-tablet.png) calc((100% - 50%) + 201px) 344px no-repeat;
+    background: url(../img/advantages/advantages-cake-left-tablet.png) calc((100% - 50%) - 242px) 52px no-repeat,
+    url(../img/advantages/advantages-cake-right-tablet.png) calc((100% - 50%) + 201px) 344px no-repeat;
     svg {
       position: absolute;
       top: 14px;
@@ -32,8 +32,8 @@
   @media (min-width: $desktop-width) {
     min-height: 1237px;
 
-    background: url(../../img/advantages/advantages-cake-left-desktop.png) calc((100% - 50%) - 430px) 73px no-repeat,
-    url(../../img/advantages/advantages-cake-right-desktop.png) calc((100% - 50%) + 341px) 597px no-repeat;
+    background: url(../img/advantages/advantages-cake-left-desktop.png) calc((100% - 50%) - 430px) 73px no-repeat,
+    url(../img/advantages/advantages-cake-right-desktop.png) calc((100% - 50%) + 341px) 597px no-repeat;
     svg {
       top: 23px;
       left: 328px;

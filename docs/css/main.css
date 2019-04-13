@@ -272,7 +272,7 @@ p {
   min-height: 464px;
   padding-top: 132px;
   background-color: #fbebea;
-  background-image: url(../../img/intro/intro-bg-mobile.png);
+  background-image: url(../img/intro/intro-bg-mobile.png);
   background-repeat: no-repeat;
   background-position: 50% -40px; }
   .intro .button {
@@ -281,7 +281,7 @@ p {
     .intro {
       min-height: 710px;
       padding-top: 109px;
-      background-image: url(../../img/intro/intro-bg-tablet.png);
+      background-image: url(../img/intro/intro-bg-tablet.png);
       background-position-x: calc((100% - 50%) + 236px);
       background-position-y: 12px; }
       .intro .container {
@@ -304,7 +304,7 @@ p {
     .intro {
       min-height: 950px;
       padding-top: 156px;
-      background-image: url(../../img/intro/intro-bg-desktop.png);
+      background-image: url(../img/intro/intro-bg-desktop.png);
       background-position-x: calc((100% - 50%) + 392px);
       background-position-y: 17px; }
       .intro .button {
@@ -1469,7 +1469,7 @@ p {
 
 .advantages {
   min-height: 686px;
-  background-image: url(../../img/advantages/advantages-cake-mobile.png);
+  background-image: url(../img/advantages/advantages-cake-mobile.png);
   background-repeat: no-repeat;
   background-position: 50% 159%; }
   .advantages svg {
@@ -1479,7 +1479,7 @@ p {
   @media (min-width: 768px) {
     .advantages {
       min-height: 696px;
-      background: url(../../img/advantages/advantages-cake-left-tablet.png) calc((100% - 50%) - 242px) 52px no-repeat, url(../../img/advantages/advantages-cake-right-tablet.png) calc((100% - 50%) + 201px) 344px no-repeat; }
+      background: url(../img/advantages/advantages-cake-left-tablet.png) calc((100% - 50%) - 242px) 52px no-repeat, url(../img/advantages/advantages-cake-right-tablet.png) calc((100% - 50%) + 201px) 344px no-repeat; }
       .advantages svg {
         position: absolute;
         top: 14px;
@@ -1491,7 +1491,7 @@ p {
   @media (min-width: 1366px) {
     .advantages {
       min-height: 1237px;
-      background: url(../../img/advantages/advantages-cake-left-desktop.png) calc((100% - 50%) - 430px) 73px no-repeat, url(../../img/advantages/advantages-cake-right-desktop.png) calc((100% - 50%) + 341px) 597px no-repeat; }
+      background: url(../img/advantages/advantages-cake-left-desktop.png) calc((100% - 50%) - 430px) 73px no-repeat, url(../img/advantages/advantages-cake-right-desktop.png) calc((100% - 50%) + 341px) 597px no-repeat; }
       .advantages svg {
         top: 23px;
         left: 328px;
@@ -1661,20 +1661,20 @@ p {
   min-height: 482px;
   color: #ffffff;
   background-color: #e5363e;
-  background-image: url(../../img/delivery/delivery-bg-mobile.png);
+  background-image: url(../img/delivery/delivery-bg-mobile.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 80%; }
   @media (min-width: 768px) {
     .delivery {
       min-height: 420px;
-      background-image: url(../../img/delivery/delivery-bg-tablet.png);
+      background-image: url(../img/delivery/delivery-bg-tablet.png);
       background-position-x: calc((100% - 50%) - 170px);
       background-position-y: 94px; } }
   @media (min-width: 1366px) {
     .delivery {
       min-height: 701px;
-      background-image: url(../../img/delivery/delivery-bg-desktop.png);
+      background-image: url(../img/delivery/delivery-bg-desktop.png);
       background-repeat: no-repeat;
       background-position-x: calc(100% - 50%);
       background-position-y: 0; } }
@@ -1780,14 +1780,14 @@ p {
           -ms-flex-align: start;
               align-items: flex-start;
       min-height: 589px;
-      background-image: url(../../img/contacts/contacts-bg-tablet.png);
+      background-image: url(../img/contacts/contacts-bg-tablet.png);
       background-repeat: no-repeat;
       background-position-x: calc((100% - 50%) + 227px);
       background-position-y: 188px; } }
   @media (min-width: 1366px) {
     .contacts {
       min-height: 846px;
-      background-image: url(../../img/contacts/contacts-bg-desktop.png);
+      background-image: url(../img/contacts/contacts-bg-desktop.png);
       background-repeat: no-repeat;
       background-position-x: calc((100% - 50%) + 274px);
       background-position-y: 210px; } }

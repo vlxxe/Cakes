@@ -4,7 +4,7 @@
   color: #ffffff;
 
   background-color: #e5363e;
-  background-image: url(../../img/delivery/delivery-bg-mobile.png);
+  background-image: url(../img/delivery/delivery-bg-mobile.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 80%;
@@ -13,7 +13,7 @@
   @media (min-width: $tablet-width) {
     min-height: 420px;
 
-    background-image: url(../../img/delivery/delivery-bg-tablet.png);
+    background-image: url(../img/delivery/delivery-bg-tablet.png);
     background-position-x: calc((100% - 50%) - 170px);
     background-position-y: 94px;
   }
@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     min-height: 701px;
 
-    background-image: url(../../img/delivery/delivery-bg-desktop.png);
+    background-image: url(../img/delivery/delivery-bg-desktop.png);
     background-repeat: no-repeat;
     background-position-x: calc(100% - 50%);
     background-position-y: 0;

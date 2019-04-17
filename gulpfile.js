@@ -2,27 +2,26 @@
 
 var gulp = require("gulp");
 var wait = require("gulp-wait");
-var sass = require("gulp-sass"); // Подключаем Sass пакет
+var sass = require("gulp-sass");
 var rename = require("gulp-rename");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var minify = require("gulp-csso"); // Минимизация CSS
-var imagemin = require("gulp-imagemin"); // Сжатие изображений
-var svgstore = require("gulp-svgstore"); // svg спрайт
+var minify = require("gulp-csso");
+var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
-var concat = require("gulp-concat"); // Объединение файлов
-var uglify = require("gulp-uglify"); // Минимизация js
+var uglify = require("gulp-uglify");
 
-gulp.task('js', function () { //Минификация js
+gulp.task('js', function () {
   return gulp.src([
 			'node_modules/jquery/dist/jquery.min.js',
 			'node_modules/owl.carousel/dist/owl.carousel.min.js',
-      'js/scripts.js'
+      'src/js/scripts.js'
     ])
     .pipe(gulp.dest('build/js'))
     .pipe(uglify())
@@ -30,13 +29,13 @@ gulp.task('js', function () { //Минификация js
 		.pipe(gulp.dest('build/js'))
 });
 
-gulp.task("style", function () { // sass в css
+gulp.task("style", function () {
 	return gulp.src([
 		'node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
 		'node_modules/owl.carousel/dist/assets/owl.theme.default.min.css'
 	])
 	.pipe(gulp.dest('build/css')),
-	gulp.src("sass/main.+(sass|scss)")
+	gulp.src("src/sass/main.+(sass|scss)")
 		.pipe(plumber())
 		.pipe(wait(100))
 		.pipe(sass({outputStyle: "expand"}).on("error", sass.logError))
@@ -52,7 +51,7 @@ gulp.task("style", function () { // sass в css
 		.pipe(server.stream());
 });
 
-gulp.task("serve", function () { // LiveServer build
+gulp.task("serve", function () {
 	server.init({
 		server: "build/",
 		notify: false,
@@ -61,12 +60,12 @@ gulp.task("serve", function () { // LiveServer build
 		ui: false
 	});
 
-	gulp.watch("sass/**/*.scss", ["style"]).on("change", server.reload);
-	gulp.watch(['js/scripts.js'], ["js"]).on("change", server.reload);
-	gulp.watch("*.html", ["html"]).on("change", server.reload);
+	gulp.watch("src/sass/**/*.scss", ["style"]).on("change", server.reload);
+	gulp.watch(["src/js/scripts.js"], ["js"]).on("change", server.reload);
+	gulp.watch("src/*.html", ["html"]).on("change", server.reload);
 });
 
-gulp.task("build", function (done) { // Создание билда
+gulp.task("build", function (done) {
 	run(
 		"clean",
 		"copy",
@@ -79,16 +78,23 @@ gulp.task("build", function (done) { // Создание билда
 	);
 });
 
-gulp.task("sprite", function () { // Создание svg спрайта
-	return gulp.src("img/**/icon-*.svg")
-		.pipe(svgstore({
-			inlineSvg: true
-		}))
-		.pipe(rename("sprite.svg"))
-		.pipe(gulp.dest("build/img/"));
+gulp.task("clean", function () {
+	return del("build");
 });
 
-gulp.task("images", function () { // Сжатие изображений
+gulp.task("copy", function () {
+	return gulp.src([
+			"src/fonts/**/*",
+			"src/img/**",
+			"src/js/**",
+			"src/*.html"
+		], {
+			base: "./src"
+		})
+		.pipe(gulp.dest("build"));
+});
+
+gulp.task("images", function () {
 	return gulp.src("build/img/**/*.{png,jpg,svg}")
 		.pipe(imagemin([
 			imagemin.optipng({
@@ -101,26 +107,22 @@ gulp.task("images", function () { // Сжатие изображений
 		.pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html", function () { // PostHtml
-	return gulp.src("*.html")
+gulp.task("sprite", function () {
+	return gulp.src("src/img/**/icon-*.svg")
+		.pipe(svgstore({
+			inlineSvg: true
+		}))
+		.pipe(rename("sprite.svg"))
+		.pipe(gulp.dest("build/img/"));
+});
+
+gulp.task("html", function () {
+	return gulp.src("src/*.html")
 		.pipe(posthtml([
 			include()
 		]))
 		.pipe(gulp.dest("build"));
 });
 
-gulp.task("copy", function () { // Копирование в билд
-	return gulp.src([
-			"fonts/**/*",
-			"img/**",
-			"js/**",
-			"*.html"
-		], {
-			base: "."
-		})
-		.pipe(gulp.dest("build"));
-});
 
-gulp.task("clean", function () { // Удаление билда
-	return del("build");
-});
+

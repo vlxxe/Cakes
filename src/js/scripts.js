@@ -1,7 +1,9 @@
+////////////////////Навигация меню/////////////////////
+
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs'); // Открытие-закрытие мобильного меню
+navMain.classList.remove('main-nav--nojs');
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
     navMain.classList.remove('main-nav--closed');
@@ -11,6 +13,8 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+////////////////////Карусель .custom-order__item--filling /////////////////////
 
 $(function () {
   $('.custom-order__item--filling .owl-carousel').owlCarousel({
@@ -30,6 +34,8 @@ $(function () {
   });
 });
 
+////////////////////Карусель .custom-order__item--size /////////////////////
+
 $(function () {
   $('.custom-order__item--size .owl-carousel').owlCarousel({
     loop: true,
@@ -46,6 +52,8 @@ $(function () {
     }
   });
 });
+
+////////////////////Карусель .custom-order__item--decor /////////////////////
 
 $(function () {
   $('.custom-order__item--decor .owl-carousel').owlCarousel({
@@ -66,6 +74,8 @@ $(function () {
     }
   });
 });
+
+//////////////////////////Карусель reviews ////////////////////////////
 
 $(function () {
   $('.reviews .owl-carousel').owlCarousel({
